@@ -1,0 +1,118 @@
+@import './const';
+
+@media  only screen and(max-width:767px) {
+    // first page
+    .FirstPage header{
+        display: flex;
+        color: red;
+        text-align: center;
+        justify-content: center;
+    }
+   .FirstPage nav ul a{
+        display: none;
+    }
+
+    // second page
+    .SecondPage img{
+        width: 100%;
+    }
+
+    // third page
+    .ThirdPage .cards{
+        row-gap: 30px;
+        .card{
+            width:80%;
+        }
+    }
+    // footer
+
+    // six page
+    .sixPage{
+        padding: 20px;
+        .imageCaloreies{
+            img{
+                display: none;
+            }
+        }
+        .infoCalories{
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width:992px) and(min-width:650px) {
+    // third page
+    .ThirdPage .cards{
+        row-gap: 30px;
+        .card{
+            width: calc(80%/2);
+        }
+    }
+}
+
+
+// special media for the fourth page
+
+@media only screen and (max-width : 850px) and (min-width:700px){
+// four page
+.FourthPage{
+    h1{
+        text-align: center;
+    }
+    .trainers{
+      .trainer{
+          width: calc(90%/3);
+          row-gap: 30px;
+      } 
+    }
+     }
+}
+
+@media only screen and (max-width:700px) {
+// four page
+.FourthPage{
+    h1{
+        text-align: center;
+    }
+    .trainers{
+        row-gap: 30px;
+      .trainer{
+          width: calc(80%/1);
+          img{
+              width: 100%;
+          }
+          .info{
+              padding: 0;
+          }
+      } 
+    }
+}
+}
+
+
+// special media for contact
+
+@media only screen and (max-width:467px) {
+     // contact page
+     .contactPage{
+        .contact{
+            width: 90%;
+        }
+        .radio-item{
+            width: 155px;
+        }
+    }
+}
+
+// special media for caloreis page 
+
+@media only screen and (max-width:767px) {
+    .caloriesPage{
+        width: 90%;
+    }
+}
+@media only screen and (max-width:500px) {
+    .caloriesPage{
+        width: 100%;
+    }
+}

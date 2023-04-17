@@ -1,0 +1,67 @@
+@import './const';
+.FirstPage{
+    min-height: 100vh;
+    background-image: url(muscle-press-pose-athlete-workout-hd-wallpaper-742e3fa43719b9e7c12bea17c7ddd322.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    header{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 30px;
+        .logo{
+            display: flex;
+            font-weight: bolder;
+            color:$mainColor;
+        }
+        nav ul{  
+            list-style: none;  
+            flex-wrap:wrap ;
+            text-align: center;
+            @extend %flexCenter;
+            color: #{$mainColor};
+            text-transform: uppercase;
+            a{
+                text-decoration: none;
+                color: #{$mainColor};
+            }
+            li{
+                padding: 5px;
+                margin: 0 10px;
+                position: relative;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    width: 90%;
+                    bottom: 15px;
+                    height: 1.5px;
+                    transform: rotate(-20deg);
+                    background-color:  #{$secondColor};
+                }
+            }
+        }
+    }
+    .motivateWord{
+        color: $mainColor;
+        text-transform: uppercase;
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(-50%,-50%);
+    }
+    .scroll{
+        i{
+            background-color: white;
+            color: #{$secondColor};
+            font-size: 35px;
+            @extend %flexCenter;
+            position: fixed;
+            border-radius: 10px;
+            bottom: 10px;
+            right: 10px;
+            z-index: 55;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+        }
+    }
+}

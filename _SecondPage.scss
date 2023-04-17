@@ -1,0 +1,21 @@
+@import './const';
+.SecondPage{
+    min-height: 100vh;
+    padding-bottom: 10px;
+    background-color: $secondColor;
+    h1{
+        font-weight: bold;
+        height: #{$h1heigh};
+        @extend %flexCenter;
+        text-transform: capitalize;
+     }
+     li{
+         cursor: pointer;
+     }
+    img{
+        height: 80vh;
+        width: 90%;
+        border-radius: 10px;
+        
+    }
+}

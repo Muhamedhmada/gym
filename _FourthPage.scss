@@ -1,0 +1,88 @@
+@import './const';
+
+.FourthPage{
+    min-height: 100vh;
+    background-color: $secondColor;
+    h1{
+        height: #{$h1heigh};
+        @extend %flexCenter;
+        text-transform: capitalize;
+    }
+    .trainers{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        .trainer{
+            width: calc(80%/3);
+            height: 400px;
+            position: relative;
+            img{
+                border-radius: 10px;
+                width: 100%;
+                height: 400px;
+            }
+            }
+            .info{
+                color:#{$secondColor};
+                position: absolute;
+                bottom: 0px;
+                background-color: rgba(0, 0, 0, 0.822);
+                min-height: 200px;
+                width: 100%;
+                text-align: center;
+                display: none;
+                padding: 10px;
+                border-top-left-radius: 40px;
+                border-top-right-radius: 40px;
+                // animation
+                overflow: hidden;
+                animation-duration: 1s;
+                animation-name: show;
+                h3{
+                    color:#{$mainColor};
+                    text-transform: capitalize;
+                    font-weight: bold;
+                    color: white;
+                }
+                p{
+                    color: $mainColor;
+                }
+                .trainerRate{
+                    & i{
+                        font-size: 25px;
+                        cursor: pointer;
+                        color: #{$mainColor};
+                        opacity: .3;
+                        transition-duration: #{$transition};
+                        &:hover{
+                            scale: 1.2;
+                        }
+                    }
+                }
+                .contact {
+                    text-align: center;
+                    @extend %flexCenter;
+                    a{
+                        padding: 7px 20px;
+                        margin-top: 10px;
+                        min-width: 25%;
+                        text-align: center;
+                        color: #{$secondColor};
+                        text-decoration: none;
+                        background-color: white;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+        }
+
+    @keyframes show {
+        from{
+            height: 0;
+        }
+        to {
+            min-height: 200px;
+        }
+    }

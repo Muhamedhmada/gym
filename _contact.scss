@@ -1,0 +1,104 @@
+@import './const';
+@import './loader';
+.contactPage{
+    min-height: 100vh;
+    background-image:url(background2.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .contact{
+        width: 500px;
+        min-height: 90%;
+        padding: 10px;
+        border-radius: 10px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        background-color: rgba(0, 0, 0, 0.849);
+        color: $mainColor;
+        a{
+            text-decoration: none;
+            h1{
+                @extend %flexCenter;
+                color: white;
+            }
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            input{
+                border: 0;
+                outline: 0;
+                border-radius: 5px;
+                margin: 5px 0 ;
+                padding: 5px;
+            }
+            label{
+                margin: 0 5px;
+                transition-duration: .5s;
+            }
+            .radio{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                .trainer{
+                    margin-top: 10px;
+                    h6{
+                        font-size: larger;
+                        font-weight: bold;
+                    }
+                        input{
+                            margin-right: 10px;
+                        }
+                        label{
+                            text-transform: capitalize;
+                            font-size: larger;
+                        }
+                    }
+                }
+                .kind{
+                    label{
+                        text-transform: capitalize;
+                        font-size: larger;
+                    }
+                    input{
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .send{
+                @extend %flexCenter;
+                input{
+                padding: 10px;
+                margin-bottom: 10px;
+                width: 100%;
+                text-transform: capitalize;
+                font-size: larger;
+                font-weight: bold;
+                cursor: pointer;
+                }
+            }
+        }
+    }
+.radio-item{
+    background-color: $secondColor;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 255, 0.2);
+    width: 200px;
+    transition-duration: .2s;
+    &:hover{
+    border: 2px solid blue;
+    }
+    input{
+        width: 18px;
+        height: 18px;
+        &:checked{
+            border: 2px solid blue;
+        }
+        &:checked + label{
+            color: blue;
+        }
+    }
+}

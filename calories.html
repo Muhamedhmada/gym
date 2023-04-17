@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cssfont/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="theContainer">
+        <h1>CALCULATE YOUR BMI</h1>
+        <div class="caloriesPage">    
+            <div class="calForm">
+                <label for="heigh">heigh(CM)</label>
+                <input required type="number" id="heigh">
+                <label for="weight">weight(KG)</label>
+                <input required type="number" id="weight">
+                <label for="age">age</label>
+                <input required type="number" id="age">
+                <label for="range">activity level</label>
+                <div class="range"><input required type="range" value="2" min="0" max="4" step="1" id="range"><span id="rangeNumber"></span></div>
+                <div class="calKind" id="calKind">
+                    <input required type="radio" checked   name="calKind" id="calKindMale" value="man"><label for="calKindMale">Male</label><br>
+                    <input required type="radio" name="calKind" id="calKindFemale" value="woman"><label for="calKindFemale">Female</label><br>
+                </div>
+            </div>
+            <div class="right-side">
+                <button id="calcNow">Calc Now</button>
+                <div class="resultInof">
+                    <div class=" calResults"> your calories are </div>
+                    <span id="result"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="calories.js"></script>
+</body>
+</html>

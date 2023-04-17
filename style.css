@@ -1,0 +1,874 @@
+.FirstPage {
+  min-height: 100vh;
+  background-image: url(muscle-press-pose-athlete-workout-hd-wallpaper-742e3fa43719b9e7c12bea17c7ddd322.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.FirstPage header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 30px;
+}
+
+.FirstPage header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bolder;
+  color: #c5bbbb;
+}
+
+.FirstPage header nav ul {
+  list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  color: #c5bbbb;
+  text-transform: uppercase;
+}
+
+.FirstPage header nav ul a {
+  text-decoration: none;
+  color: #c5bbbb;
+}
+
+.FirstPage header nav ul li {
+  padding: 5px;
+  margin: 0 10px;
+  position: relative;
+}
+
+.FirstPage header nav ul li::before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  bottom: 15px;
+  height: 1.5px;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  background-color: #151515;
+}
+
+.FirstPage .motivateWord {
+  color: #c5bbbb;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.FirstPage .scroll i {
+  background-color: white;
+  color: #151515;
+  font-size: 35px;
+  position: fixed;
+  border-radius: 10px;
+  bottom: 10px;
+  right: 10px;
+  z-index: 55;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.SecondPage {
+  min-height: 100vh;
+  padding-bottom: 10px;
+  background-color: #151515;
+}
+
+.SecondPage h1 {
+  font-weight: bold;
+  height: 15vh;
+  text-transform: capitalize;
+}
+
+.SecondPage li {
+  cursor: pointer;
+}
+
+.SecondPage img {
+  height: 80vh;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.ThirdPage {
+  min-height: 100vh;
+  padding-bottom: 10vh;
+  background-color: #151515;
+}
+
+.ThirdPage h1 {
+  height: 15vh;
+  text-transform: capitalize;
+}
+
+.ThirdPage .cards {
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.ThirdPage .cards .card {
+  width: calc(80%/4);
+  background-color: #c5bbbb;
+  color: #151515;
+  border: 0;
+  outline: 0;
+  border-radius: 10px;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.ThirdPage .cards .card:hover {
+  scale: 1.2;
+  z-index: 50;
+}
+
+.ThirdPage .cards .card img {
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.ThirdPage .cards .card .card-body {
+  text-align: center;
+}
+
+.ThirdPage .cards .card .card-body .card-title {
+  text-transform: capitalize;
+}
+
+.FourthPage {
+  min-height: 100vh;
+  background-color: #151515;
+}
+
+.FourthPage h1 {
+  height: 15vh;
+  text-transform: capitalize;
+}
+
+.FourthPage .trainers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.FourthPage .trainers .trainer {
+  width: calc(80%/3);
+  height: 400px;
+  position: relative;
+}
+
+.FourthPage .trainers .trainer img {
+  border-radius: 10px;
+  width: 100%;
+  height: 400px;
+}
+
+.FourthPage .trainers .info {
+  color: #151515;
+  position: absolute;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.822);
+  min-height: 200px;
+  width: 100%;
+  text-align: center;
+  display: none;
+  padding: 10px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  overflow: hidden;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: show;
+          animation-name: show;
+}
+
+.FourthPage .trainers .info h3 {
+  color: #c5bbbb;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: white;
+}
+
+.FourthPage .trainers .info p {
+  color: #c5bbbb;
+}
+
+.FourthPage .trainers .info .trainerRate i {
+  font-size: 25px;
+  cursor: pointer;
+  color: #c5bbbb;
+  opacity: .3;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.FourthPage .trainers .info .trainerRate i:hover {
+  scale: 1.2;
+}
+
+.FourthPage .trainers .info .contact {
+  text-align: center;
+}
+
+.FourthPage .trainers .info .contact a {
+  padding: 7px 20px;
+  margin-top: 10px;
+  min-width: 25%;
+  text-align: center;
+  color: #151515;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 10px;
+}
+
+@-webkit-keyframes show {
+  from {
+    height: 0;
+  }
+  to {
+    min-height: 200px;
+  }
+}
+
+@keyframes show {
+  from {
+    height: 0;
+  }
+  to {
+    min-height: 200px;
+  }
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+  color: #c5bbbb;
+}
+
+footer a {
+  display: inline-block;
+}
+
+footer h1 {
+  height: 15vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer .gymSocial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .gymSocial i {
+  cursor: pointer;
+  font-size: 30px;
+  margin: 0 10px;
+  -webkit-transition-duration: .3s;
+          transition-duration: .3s;
+}
+
+footer .gymSocial i:hover {
+  scale: 1.3;
+}
+
+footer .designer {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.designerSocial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.designerSocial i {
+  font-size: 30px;
+  margin: 0 20px;
+  text-align: center;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.designerSocial i:hover {
+  scale: 1.5;
+}
+
+#loader {
+  background: #151515;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: fixed;
+  z-index: 100;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+
+#loader .number {
+  font-size: 80px;
+  color: #c5bbbb;
+}
+
+#loader .progressBar {
+  width: 400px;
+  height: 15px;
+  background-color: #c5bbbb;
+  border-radius: 10px;
+  border: 0;
+  outline: 0;
+}
+
+#loader .progressBar .before {
+  border: 0;
+  outline: 0;
+  overflow: hidden;
+  width: 20px;
+  height: 100%;
+  background-color: blue;
+  border-radius: 10px;
+  color: #c5bbbb;
+}
+
+.contactPage {
+  min-height: 100vh;
+  background-image: url(background2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contactPage .contact {
+  width: 500px;
+  min-height: 90%;
+  padding: 10px;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.849);
+  color: #c5bbbb;
+}
+
+.contactPage .contact a {
+  text-decoration: none;
+}
+
+.contactPage .contact a h1 {
+  color: white;
+}
+
+.contactPage .contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contactPage .contact form input {
+  border: 0;
+  outline: 0;
+  border-radius: 5px;
+  margin: 5px 0;
+  padding: 5px;
+}
+
+.contactPage .contact form label {
+  margin: 0 5px;
+  -webkit-transition-duration: .5s;
+          transition-duration: .5s;
+}
+
+.contactPage .contact form .radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contactPage .contact form .radio .trainer {
+  margin-top: 10px;
+}
+
+.contactPage .contact form .radio .trainer h6 {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.contactPage .contact form .radio .trainer input {
+  margin-right: 10px;
+}
+
+.contactPage .contact form .radio .trainer label {
+  text-transform: capitalize;
+  font-size: larger;
+}
+
+.contactPage .contact form .kind label {
+  text-transform: capitalize;
+  font-size: larger;
+}
+
+.contactPage .contact form .kind input {
+  margin-right: 10px;
+}
+
+.contactPage .contact .send input {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  text-transform: capitalize;
+  font-size: larger;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.radio-item {
+  background-color: #151515;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 255, 0.2);
+  width: 200px;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+
+.radio-item:hover {
+  border: 2px solid blue;
+}
+
+.radio-item input {
+  width: 18px;
+  height: 18px;
+}
+
+.radio-item input:checked {
+  border: 2px solid blue;
+}
+
+.radio-item input:checked + label {
+  color: blue;
+}
+
+#loader {
+  background: #151515;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: fixed;
+  z-index: 100;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+}
+
+#loader .number {
+  font-size: 80px;
+  color: #c5bbbb;
+}
+
+#loader .progressBar {
+  width: 400px;
+  height: 15px;
+  background-color: #c5bbbb;
+  border-radius: 10px;
+  border: 0;
+  outline: 0;
+}
+
+#loader .progressBar .before {
+  border: 0;
+  outline: 0;
+  overflow: hidden;
+  width: 20px;
+  height: 100%;
+  background-color: blue;
+  border-radius: 10px;
+  color: #c5bbbb;
+}
+
+.theContainer {
+  background: url(background3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.theContainer h1 {
+  text-align: center;
+  padding-top: 50px;
+  font-weight: bolder;
+  color: #00008b !important;
+}
+
+.caloriesPage {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #15151594;
+  border-radius: 10px;
+  padding: 10px;
+  -webkit-box-shadow: 10px 10px 5px black;
+          box-shadow: 10px 10px 5px black;
+}
+
+.caloriesPage .calForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.caloriesPage .calForm .calKind {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.caloriesPage .calForm .calKind input {
+  width: 18px;
+  height: 18px;
+}
+
+.caloriesPage input {
+  width: 200px;
+  border: 0;
+  outline: 0;
+  margin-bottom: 15px;
+  height: 30px;
+  border-radius: 7px;
+  padding: 5px;
+}
+
+.caloriesPage label {
+  color: #add8e6;
+  text-transform: capitalize;
+  font-size: larger;
+}
+
+.caloriesPage .range input[type=range] {
+  width: 200px;
+  background-color: black;
+}
+
+.caloriesPage .range span {
+  font-size: 35px;
+  color: #add8e6;
+  margin-left: 15px;
+}
+
+.caloriesPage .right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  row-gap: 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.caloriesPage .right-side button {
+  font-size: large;
+  border: 0;
+  outline: 0;
+  padding: 10px 30px;
+  color: #add8e6;
+  background-color: #00008b;
+  cursor: pointer;
+}
+
+.caloriesPage .right-side .calResults {
+  font-size: large;
+  color: #add8e6;
+}
+
+.caloriesPage .right-side .resultInof .calResults {
+  margin-bottom: 30px;
+}
+
+.caloriesPage .right-side .resultInof span {
+  color: #add8e6;
+  margin-top: 50px;
+  visibility: hidden;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #00008b;
+  padding: 10px;
+}
+
+.sixPage {
+  min-height: 60vh;
+  background-color: #151515;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+}
+
+.sixPage .imageCaloreies img {
+  width: 400px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.sixPage .infoCalories {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 20px;
+}
+
+.sixPage .infoCalories h1 {
+  text-transform: capitalize;
+  margin-top: -100px;
+  font-size: 50px;
+}
+
+.sixPage .infoCalories p {
+  color: #c5bbbb;
+}
+
+.sixPage .infoCalories a {
+  width: 150px;
+  text-decoration: none;
+  padding: 7px 10px;
+  text-align: center;
+  background-color: white;
+  color: #151515;
+}
+
+@media only screen and (max-width: 767px) {
+  .FirstPage header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: red;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .FirstPage nav ul a {
+    display: none;
+  }
+  .SecondPage img {
+    width: 100%;
+  }
+  .ThirdPage .cards {
+    row-gap: 30px;
+  }
+  .ThirdPage .cards .card {
+    width: 80%;
+  }
+  .sixPage {
+    padding: 20px;
+  }
+  .sixPage .imageCaloreies img {
+    display: none;
+  }
+  .sixPage .infoCalories {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 650px) {
+  .ThirdPage .cards {
+    row-gap: 30px;
+  }
+  .ThirdPage .cards .card {
+    width: calc(80%/2);
+  }
+}
+
+@media only screen and (max-width: 850px) and (min-width: 700px) {
+  .FourthPage h1 {
+    text-align: center;
+  }
+  .FourthPage .trainers .trainer {
+    width: calc(90%/3);
+    row-gap: 30px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .FourthPage h1 {
+    text-align: center;
+  }
+  .FourthPage .trainers {
+    row-gap: 30px;
+  }
+  .FourthPage .trainers .trainer {
+    width: calc(80%/1);
+  }
+  .FourthPage .trainers .trainer img {
+    width: 100%;
+  }
+  .FourthPage .trainers .trainer .info {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 467px) {
+  .contactPage .contact {
+    width: 90%;
+  }
+  .contactPage .radio-item {
+    width: 155px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .caloriesPage {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .caloriesPage {
+    width: 100%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.FirstPage header nav ul, .FirstPage .scroll i, .SecondPage h1, .ThirdPage h1, .FourthPage h1, .FourthPage .trainers .info .contact, #loader, #loader .progressBar .before, .contactPage .contact a h1, .contactPage .contact .send {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+h1 {
+  color: white !important;
+}
+/*# sourceMappingURL=style.css.map */
